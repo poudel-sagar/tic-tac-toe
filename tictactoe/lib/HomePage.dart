@@ -38,7 +38,7 @@ playgame(int index){
   }
 
 }
-
+// to reset the game
 resetGame(){
   setState(() {
       gameState = List.filled(9, "empty");
