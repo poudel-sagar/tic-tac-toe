@@ -64,6 +64,43 @@ Icon getIcon(String title){
 }
 
 checkWin(){
+  if((gameState[0]!="empty") &&(gameState[0]==gameState[1])&&(gameState[1])==gameState[2])){
+    setstate((){
+      this.message = this.gameState[0] +'win';
+    });
+  }else if((gameState[3]!="empty") &&(gameState[3]==gameState[4])&&(gameState[4])==gameState[5])){
+    setstate((){
+      this.message = this.gameState[3] +'win';
+    });
+  }else if((gameState[6]!="empty") &&(gameState[6]==gameState[7])&&(gameState[7])==gameState[8])){
+    setstate((){
+      this.message = this.gameState[8] +'win';
+    });
+  }else if((gameState[0]!="empty") &&(gameState[0]==gameState[3])&&(gameState[3])==gameState[6])){
+    setstate((){
+      this.message = this.gameState[6] +'win';
+    });
+  }else if((gameState[3]!="empty") &&(gameState[3]==gameState[4])&&(gameState[4])==gameState[5])){
+    setstate((){
+      this.message = this.gameState[0] +'win';
+    });
+  }else if((gameState[1]!="empty") &&(gameState[1]==gameState[4])&&(gameState[4])==gameState[7])){
+    setstate((){
+      this.message = this.gameState[0] +'win';
+    });
+  }else if((gameState[2]!="empty") &&(gameState[2]==gameState[5])&&(gameState[5])==gameState[8])){
+    setstate((){
+      this.message = this.gameState[0] +'win';
+    });
+  }else if((gameState[0]!="empty") &&(gameState[0]==gameState[4])&&(gameState[4])==gameState[8])){
+    setstate((){
+      this.message = this.gameState[0] +'win';
+    });
+  }else if((gameState[2]!="empty") &&(gameState[2]==gameState[4])&&(gameState[4])==gameState[6])){
+    setstate((){
+      this.message = this.gameState[2] +'win';
+    });
+  }
 
 }
 
