@@ -24,7 +24,7 @@ List<String> gameState;
     super.initState();
   }
 
-// To play game
+// To play gaame
 playgame(int index){
   if(this.gameState[index]=="empty"){
     setState(() {
